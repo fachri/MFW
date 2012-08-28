@@ -1,0 +1,1 @@
+<?php if (! defined('SISTEM')) exit('Siapa Anda?'); ?>
