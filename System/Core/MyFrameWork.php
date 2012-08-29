@@ -62,16 +62,16 @@ class MyFrameWork
 		
 	}
 	
-	protected function Language($language = NULL)
+	protected function Language($input = NULL)
 	{
 		$languageSelected = NULL;
 
-		if ( $language == NULL ) :
+		if ( $input == NULL ) :
 			$languageSelected = $this->configuration['Language'][0];
 		else :
 			for ( $b=0 ; $b<count($this->configuration['Language']) ; $b++ ) :
-				if ( strtolower($language) == strtolower($this->configuration['Language'][$b]) ) :
-					$languageSelected = $language;
+				if ( strtolower($input) == strtolower($this->configuration['Language'][$b]) ) :
+					$languageSelected = $input;
 				endif;
 			endfor;
 		endif;

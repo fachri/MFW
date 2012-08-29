@@ -11,6 +11,8 @@ class Welcome extends Controller
 					 	   "Startup",
 						  )
 					);
+		
+		$this->Language($this->Startup->languageCode);
 
 	}
 	
