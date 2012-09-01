@@ -2,14 +2,14 @@
 
 
 /*----------------------------------------------------------------------------------------------------
- *	Rute
+ *	Route
  *----------------------------------------------------------------------------------------------------
  *
- *	Class ini digunakan untuk proses/eksekusi berhubungan dengan rute/alamat
+ *	Class ini digunakan untuk proses/eksekusi berhubungan dengan route/alamat
  *
  */
  
-class Rute extends MyFrameWork
+class Route extends MyFrameWork
 {
 	private $URL;
 	
@@ -36,8 +36,8 @@ class Rute extends MyFrameWork
  *	Fungsi ini dipanggil untuk mencetak lokasi Kontroler dapat juga ditambahkan dengan variable-nya.
  *
  *	cth, pemanggilan
- *		$this->Rute->Kontroler('Folder/Class')
- *		$this->Rute->Kontroler('Folder/Class/Variable/IsiVariable')
+ *		$this->Route->Kontroler('Folder/Class')
+ *		$this->Route->Kontroler('Folder/Class/Variable/IsiVariable')
  *
  *	cth, output
  *		http://alamat:port/folderjikaada/index.php/Folder/Class
