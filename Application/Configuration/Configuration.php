@@ -17,7 +17,7 @@
  */
 
  $configuration['au_library'] = array(
-		 							  'Rute',
+		 							  'Route',
 		 							  'Variable',
 		 							  'Session',
 		 							 );
