@@ -27,8 +27,8 @@ class Session extends MyFrameWork
 	{
 		parent::__construct();
 		
-		if ( isset($this->configuration['session']['cache_exp']) and is_int($this->configuration['session']['cache_exp']) )
-			session_cache_expire($this->configuration['session']['cache_exp']);
+		if ( isset($this->configuration['Session']['CacheExp']) and is_int($this->configuration['Session']['CacheExp']) )
+			session_cache_expire($this->configuration['Session']['CacheExp']);
 		
 		if (!session_id())
 			session_start();

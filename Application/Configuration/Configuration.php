@@ -53,14 +53,14 @@
  $configuration['Language'][0]							= 'en';										# bahasa default
  #$sistem['Bahasa'][1]		= 'id';										# bahasa tambahan
  
- $configuration['session']['cache_exp'] 				= 20;									# in minute(s)
+ $configuration['Session']['cache_exp'] 				= 20;									# in minute(s)
  
  # nama session
- $configuration['session']['Language']					= 'language';
- $configuration['session']['Token']						= 'token';
- $configuration['session']['ID']						= 'id';
- $configuration['session']['Name']						= 'name';
- $configuration['session']['Timeout']					= 'timeout';
+ $configuration['Session']['Language']					= 'language';
+ $configuration['Session']['Token']						= 'token';
+ $configuration['Session']['ID']						= 'id';
+ $configuration['Session']['Name']						= 'name';
+ $configuration['Session']['Timeout']					= 'timeout';
   
  
 ?>
