@@ -132,7 +132,7 @@ class Session extends MyFrameWork
 		if (is_array($session)) :
 			
 			while (list($key) = each($session)) :
-				$this->Delete($key);
+				$this->Delete($session[$key]);
 			endwhile;
 			
 			return NULL;
