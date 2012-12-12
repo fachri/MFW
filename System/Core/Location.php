@@ -23,7 +23,7 @@
  #		konfigurasi/
 	$location['AConfiguration']		= AConfiguration;
  #			BasisData.php
-	$location['ACDatabase']			= $location['AConfiguration'].'DataBase'.EXT;
+	$location['ACDataBase']			= $location['AConfiguration'].'DataBase'.EXT;
  #			Website.php
 	$location['ACWebsite']			= $location['AConfiguration'].'Website'.EXT;
  #			Sistem.php

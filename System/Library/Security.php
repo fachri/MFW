@@ -37,20 +37,22 @@ class Security
 		endswitch;
 	}
 	
-	Public Function ConvertHtml( $input )
-	{
-		return htmlspecialchars(stripslashes($input));
-	}
-	
 	public function ConvertHTML( $input )
 	{
-		return $this->ConvertHtml($input);
+		return htmlspecialchars(stripslashes($input));
 	}
  
 	public function Login( $input )
 	{
+		if ( strpos($input, "'") !== FALSE )
+			return NULL;
+		
+		if ( strpos($input, "=") !== FALSE )
+			return NULL;
+		
 		$input = $this->ConvertHtml($input);
 		$input = str_ireplace("script", "blocked", $input);
+		$input = $this->XSS($input);
 		$input = mysql_escape_string($input);
 		return $input;
 	}

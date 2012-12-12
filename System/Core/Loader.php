@@ -100,8 +100,15 @@ class Loader extends MyFrameWork
 		if ($mode == 'ALibrary' or $mode == 'SLibrary') :
 			$className		= $file;
 			
-			if ($mode == 'SLibrary' and $file == 'DataBase')
-				$file 		= 'DB';
+			if ($mode == 'SLibrary') :
+				
+				if ($file == 'DataBase')
+					$file 		= 'DB';
+			
+				if ($file == 'FormValidation')
+					$file 		= 'FV';
+			
+			endif;
 			
 			$this->$file	= new $className;
 		endif;
